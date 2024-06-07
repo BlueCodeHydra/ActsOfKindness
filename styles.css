@@ -214,7 +214,7 @@ main {
 
 .about-item2 img {
     width: 40%; /* Set the desired percentage width */
-    max-width: 200px; /* Set the maximum pixel size */
+    max-width: 300px; /* Set the maximum pixel size */
     height: auto;
     margin: 0 20px;
     border-radius: 50%; /* Make the image circular */
