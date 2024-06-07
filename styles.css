@@ -30,6 +30,7 @@ body {
 /* Navbar logo image */
 .nav-logo {
     height: 4em; /* Adjust the height of the logo */
+    border-radius: 10px;
 }
 
 /* Navbar title */
