@@ -1,0 +1,237 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #438fa7;
+    padding: 25px 20px;
+    color: white;
+    position: relative;
+}
+
+/* Navbar left section for logo */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar logo image */
+.nav-logo {
+    height: 4em; /* Adjust the height of the logo */
+}
+
+/* Navbar title */
+.nav-title {
+    font-size: 350%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Dancing Script', cursive; /* Apply the custom font */
+}
+
+/* Navbar links container */
+.nav-links {
+    display: none; /* Hidden by default for mobile view */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 6em; /* Adjusted to be below the hamburger icon */
+    right: 10px;
+    background-color: #020202;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #000; /* Added black border */
+}
+
+/* Navbar links styles */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Show navbar links when active */
+.nav-links.active {
+    display: flex; /* Shown when menu is active */
+}
+
+/* Hamburger menu button styles */
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+/* Hamburger menu lines styles */
+.line {
+    fill: none;
+    stroke: white;
+    stroke-width: 8; /* Increase the stroke width */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 8; /* Match the increased stroke width */
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 8; /* Match the increased stroke width */
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 8; /* Match the increased stroke width */
+}
+
+/* Hamburger menu opened state styles */
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 8; /* Match the increased stroke width */
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 8; /* Match the increased stroke width */
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 8; /* Match the increased stroke width */
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px; /* Add this line to create separation */
+}
+
+.header-text {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: 20%;
+    margin: 0 auto 20px auto;
+    padding: 0.1em;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.header-image img {
+    width: 95%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin-top: 20%; /* Adjust or add margin-top to create separation */
+    border-top: 780px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* About section styles */
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #797575;   
+}
+
+.about h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #797575;   
+    margin-bottom: 10%;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.about-item img {
+    width: 60%; /* Set the desired percentage width */
+    max-width: 900px; /* Set the maximum pixel size */
+    height: auto;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.about-item p {
+    width: 40%;
+    margin: 0 20px;
+    font-size: 1em;
+    color: #333;
+    font-family: 'LXGW WenKai TC', serif; /* Apply the custom font */
+}
+
+/* Footer styles */
+footer {
+    background-color: #438fa7;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: auto;
+    padding-bottom: 0%;
+    line-height: .7; /* Adjust this value to control the spacing between lines */
+}
+
+footer a {
+    color: #685f26;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hidden by default */
+    }
+
+    .nav-links.active {
+        display: flex; /* Shown when menu is active */
+    }
+}
