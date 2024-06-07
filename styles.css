@@ -158,16 +158,19 @@ main {
 
 /* About section styles */
 .about {
+    font-family: "LXGW WenKai TC", cursive;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .about a {
+    font-family: "LXGW WenKai TC", cursive;
     color: #0077ff;
     text-decoration: none;
 }
 
 .about a:hover {
+    font-family: "LXGW WenKai TC", cursive;
     text-decoration: underline;
 }
 
