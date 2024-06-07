@@ -236,7 +236,7 @@ main {
 .about-item2 .text-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start of the flex container */
+    align-items: center; /* Align items to the start of the flex container */
 }
 
 .about-item2 h2 {
