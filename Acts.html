@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acts of Kindness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/AOK.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="images/AOK_Logo.jpg" alt="Logo" class="nav-logo">
+        </div>
+        <div class="nav-title" style= "font-family: 'Dancing Script', cursive;">Acts of Kindness</div>
+        <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="70" height="70" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="board.html">Board Members</a>
+            <a href="acts.html">Acts of Kindness</a>
+            <a href="events.html">Recent Events</a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header-image">
+            <img src="images/bike5.jpg" alt="Header Image">
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2><strong>Recent Acts of Kindness</strong></h2>
+            <div class="about-item3">
+                <h3><strong>Acts of Kindness (A-OK) </strong> befriended a man 
+                    who was living behind the dumpster at the back of one of our 
+                    Manchester local businesses.  The gentleman did not have full 
+                    functioning use of his hands and lost his home and employment 
+                    as a result.  While homeless and living on the street, 
+                    his birth certificate, I.D., and Social Security card were 
+                    stolen.  Without a physical address or documentation, it was 
+                    very difficult to get help through the public system.  <strong>A-Ok</strong>
+                    helped this man find a spot in a local shelter and volunteers 
+                    there are working to help him obtain the necessary documentation 
+                    for his next steps as well as A-OK has helped him by obtaining a 
+                    bicycle through local donations.  The bicycle will enable this 
+                    gentleman additional freedom of transportation of being able to 
+                    get to places much quicker, job searches to enable him permanent 
+                    housing in the future.  
+
+
+                </h3>
+
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61558540132991">Acts Of Kindness NH/Page</a></p>
+        <p>Email: <a href="mailto:actsofkindnessnh@gmail.com">actsofkindnessnh@gmail.com</a></p>
+        <p>Phone: <a href="tel:+16034912927">(603) 491-2927</a></p>
+        <p>Location: 18 Pearl Street, Manchester, NH</p>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector(".menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuButton.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
