@@ -204,6 +204,47 @@ main {
     font-family: 'LXGW WenKai TC', serif; /* Apply the custom font */
 }
 
+/* Board Of directors content styles */
+.about-item2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.about-item2 img {
+    width: 40%; /* Set the desired percentage width */
+    max-width: 200px; /* Set the maximum pixel size */
+    height: auto;
+    margin: 0 20px;
+    border-radius: 50%; /* Make the image circular */
+    background-color: black; /* Set the background color to black */
+    display: block; /* Ensure the image is displayed as a block element */
+}
+
+.about-item2 .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+.about-item2 h2 {
+    margin: 10px 0 5px 0; /* Add some margin around the title */
+    font-size: 1.5em;
+    color: #333;
+    font-family: "LXGW WenKai TC", cursive; /* Apply the custom font */
+}
+
+.about-item2 h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em;
+    color: #666;
+    font-family: 'LXGW WenKai TC', serif; /* Apply the custom font */
+}
+
+
+
+
 /* Footer styles */
 footer {
     background-color: #438fa7;
