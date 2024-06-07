@@ -357,3 +357,26 @@ footer a:hover {
     width: 250px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
 }
+
+.donation2 {
+    display: inline-flex;
+    align-items: center;
+    background-color: #003366; /* Dark blue color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded corners */
+    font-size: 40px;
+    text-decoration: none;
+    font-family: "LXGW WenKai TC", cursive; /* Apply the custom font */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.donation2 .logo {
+    margin-right: 50px; /* Separation between logo and text */
+    max-width: 50px; /* Set the maximum width */
+    max-height: 60px; /* Set the maximum height */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10%;
+}
+
