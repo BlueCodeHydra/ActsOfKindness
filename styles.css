@@ -358,6 +358,7 @@ footer a:hover {
     height: auto; /* Maintain aspect ratio */
 }
 
+
 .donation2 {
     display: inline-flex;
     align-items: center;
@@ -365,17 +366,48 @@ footer a:hover {
     color: white;
     padding: 10px 20px;
     border-radius: 20px; /* Rounded corners */
-    font-size: 40px;
+    font-size: 2em;
     text-decoration: none;
     font-family: "LXGW WenKai TC", cursive; /* Apply the custom font */
     border: none; /* Remove border */
     cursor: pointer; /* Add cursor pointer */
+    max-width: 100%; /* Ensure the button does not overflow */
 }
 
 .donation2 .logo {
-    margin-right: 10px; /* Separation between logo and text */
-    max-width: 50px; /* Set the maximum width */
-    max-height: 60px; /* Set the maximum height */
-    border-radius: 10px;
+    margin-right: 20px; /* Separation between logo and text */
+    width: 50px; /* Default size */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 50px; /* Maximum width */
+    max-height: 50px; /* Maximum height */
+    border-radius: 15%;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .donation2 {
+        padding: 8px 16px;
+        font-size: 1.5em;
+    }
+
+    .donation2 .logo {
+        width: 40px; /* Adjust size for smaller screens */
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .donation2 {
+        padding: 6px 12px;
+        font-size: 1.2em;
+    }
+
+    .donation2 .logo {
+        width: 30px; /* Further adjust size for even smaller screens */
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
+
 
