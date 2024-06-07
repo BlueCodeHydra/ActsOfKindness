@@ -162,6 +162,15 @@ main {
     margin: 0 auto;
 }
 
+.about a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
 .about h2 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -239,9 +248,44 @@ main {
     margin: 0; /* Remove default margin */
     font-size: 1.2em;
     color: #666;
-    font-family: 'LXGW WenKai TC', serif; /* Apply the custom font */
+    font-family: "LXGW WenKai TC", cursive; /* Apply the custom font */
 }
 
+
+/* About Page specific styles */
+.about-page .about-item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    text-align: left; /* Ensure text alignment for readability */
+}
+
+.about-page .about-item3 h2,
+.about-page .about-item3 ul,
+.about-page .about-item3 p,
+.about-page .about-item3 h3,
+.about-page .about-item3 h4 {
+    font-family: "LXGW WenKai TC", cursive; /* Apply the custom font */
+    font-size: 1.1em; /* Set a uniform font size */
+    margin: 10px 0; /* Add some margin around the elements */
+    color: #797575; /* Adjust the color */
+}
+
+
+.about-page .about-item3 ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Add padding to bring bullets closer to the text */
+    margin: 0; /* Remove default margin */
+}
+
+.about-page .about-item3 ul li {
+    margin-bottom: 5px; /* Add some space between list items */
+    font-size: 0.9em; /* Ensure list items have a slightly smaller font size */
+    font-family: "LXGW WenKai TC", cursive; /* Ensure list items use the same font */
+    margin-left: 10px; /* Add margin to align text with bullets */
+}
 
 
 
