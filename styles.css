@@ -376,6 +376,7 @@ footer a:hover {
 
 
 .donation2 .logo {
+    padding: 9px 16px;
     margin-right: 20px; /* Separation between logo and text */
     width: 50px; /* Default size */
     height: auto; /* Maintain aspect ratio */
@@ -387,9 +388,8 @@ footer a:hover {
 .donation2-img {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
-    border-radius: 20px; /* Rounded corners */
-    font-size: 2em;
+    padding: 20px 20px;
+    border-radius: 50px; /* Rounded corners */
     text-decoration: none;
     border: none; /* Remove border */
     max-width: 100%; /* Ensure the button does not overflow */
@@ -421,6 +421,7 @@ footer a:hover {
         max-height: 30px;
     }
     .donation2-img {
+        padding: 8px 16px;
         max-width: 100px;
     }
 }
