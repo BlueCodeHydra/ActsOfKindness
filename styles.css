@@ -389,9 +389,11 @@ footer a:hover {
     display: inline-flex;
     align-items: center;
     padding: 20px;
-    border-radius: 50px; /* Rounded corners */
+    border-radius: 20%; /* Rounded corners */
+    border-color: black;
+    border-width: 5px;
     border: none; /* Remove border */
-    max-width: 100%; /* Ensure the button does not overflow */
+    max-width: 80%; /* Ensure the button does not overflow */
 }
 
 /* Responsive adjustments */
