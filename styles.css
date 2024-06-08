@@ -366,7 +366,7 @@ footer a:hover {
     color: white;
     padding: 10px 20px;
     border-radius: 20px; /* Rounded corners */
-    font-size: 2em;
+    font-size: 2.2em;
     text-decoration: none;
     font-family: "LXGW WenKai TC", cursive; /* Apply the custom font */
     border: none; /* Remove border */
@@ -377,7 +377,7 @@ footer a:hover {
 
 .donation2 .logo {
     padding: 9px 16px;
-    margin-right: 20px; /* Separation between logo and text */
+    margin-right: 10px; /* Separation between logo and text */
     width: 50px; /* Default size */
     height: auto; /* Maintain aspect ratio */
     max-width: 50px; /* Maximum width */
