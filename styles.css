@@ -420,7 +420,9 @@ footer a:hover {
         max-width: 30px;
         max-height: 30px;
     }
+
     .donation2-img {
+        align-items: center;
         max-width: 90px;
     }
 }
