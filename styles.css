@@ -141,8 +141,8 @@ body {
 }
 
 .header-image img {
-    width: 95%;
-    max-width: 1000px;
+    width: 80%;
+    max-width: 700px;
     height: auto;
     display: block;
     margin-top: 20%; /* Adjust or add margin-top to create separation */
@@ -187,6 +187,15 @@ main {
 
 .about h3 {
     font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #797575;   
+    margin-bottom: 10%;
+}
+
+.about h4 {
+    font-size: 1.5em;
     margin-bottom: 20px;
     font-weight: 400;
     font-style: normal;
@@ -319,6 +328,45 @@ main {
     font-size: 0.9em; /* Ensure list items have a slightly smaller font size */
     margin-left: 10px; /* Add margin to align text with bullets */
 }
+
+body {
+    font-family: 'LXGW WenKai TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    max-height: 500px;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0s ease-in-out;
+}
+
+.slide img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.active {
+    display: block;
+    opacity: 1;
+}
+
+
 
 /* Footer styles */
 footer {

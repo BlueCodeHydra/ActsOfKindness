@@ -36,45 +36,41 @@
     <main>
         <section class="about">
             <h2><strong>Recent Events</strong></h2>
-            <h3>
+            <h4>
                 Acts of Kindness hosts a fun monthly awareness event at various locations 
                 around Manchester. This month's event, featuring food, fundraising, and 
                 community updates, was generously hosted by The Farm Bar and Grill. 
                 We're grateful for all sponsorships and love to see new faces! 
-            </h3>
+            </h4>
             <h2>
                 Join us for the next event – check our Facebook page for details! 
             </h2>
             <h3>
                 Facebook: <a href="https://www.facebook.com/profile.php?id=61558540132991">Acts Of Kindness NH/Page</a>
             </h3>
-            <div class="about-item">
-                <p></p>
+        </section>
+        
+        <section class="slideshow-container">
+            <div class="slide fade">
                 <img src="images/1.jpg" alt="Event 1">
             </div>
-            <div class="about-item">
+            <div class="slide fade">
                 <img src="images/5.jpg" alt="Event 2">
-                <p></p>
             </div>
-            <div class="about-item">
-                <p></p>
+            <div class="slide fade">
                 <img src="images/10.jpg" alt="Event 3">
             </div>
-            <div class="about-item">
-                <img src="images/11.jpg" alt="Event 3">
-                <p></p>
+            <div class="slide fade">
+                <img src="images/11.jpg" alt="Event 4">
             </div>
-            <div class="about-item">
-                <p></p>
-                <img src="images/8.jpg" alt="Event 3">
+            <div class="slide fade">
+                <img src="images/8.jpg" alt="Event 5">
             </div>
-            <div class="about-item">
-                <img src="images/7.jpg" alt="Event 3">
-                <p></p>
+            <div class="slide fade">
+                <img src="images/7.jpg" alt="Event 6">
             </div>
-            <div class="about-item">
-                <p></p>
-                <img src="images/9.jpg" alt="Event 3">
+            <div class="slide fade">
+                <img src="images/9.jpg" alt="Event 7">
             </div>
         </section>
     </main>
@@ -93,6 +89,22 @@
         menuButton.addEventListener("click", () => {
             navLinks.classList.toggle("active");
         });
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 7000); // Change image every 3 seconds
+        }
+
     </script>
 </body>
 </html>
